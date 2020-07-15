@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <h1>Diffenece between var let and const</h1>
+    <h3>Var</h3>
+    <p>
+        var is used to declare variables.  <br>
+        eg:  <br>
+        var greeter = "hey hi";  <br>
+        function newFunction() {  <br>
+        var hello = "hello";  <br>
+         }  <br>
+
+
+    </p>
+    <h3>Let</h3>
+    <p>
+        let is an advanced version of var.let is block scoped.let can be updated not replaced.<br>
+        eg: <br>
+        let greeting = "say Hi";  <br>
+        let times = 4;  <br>
+        if (times > 3) {  <br>
+             let hello = "say Hello instead";  <br>
+             console.log(hello);// "say Hello instead"  <br>
+         }  <br>
+        
+    </p>
+    <h3>Const</h3>
+    <p>
+        Variables declared with the const maintain constant values. const declarations share some similarities with let declarations.  <br>
+        Const cannot be updated or re declared.  <br>
+        eg:  <br>
+        const greeting = "say Hi";  <br>
+        const greeting = "say Hello instead";// error: Identifier 'greeting' has already been declared  <br>
+    
+    </p>
+        
+</body>
+</html>
