@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    
+</head>
+
+<body>
+    <script>
+        var grade;
+        var a = prompt("Enter the marks out of 100");
+        function print(a,grade) {
+            
+        
+            console.log("Marks are "+a+" and the grade is "+grade);
+            
+            }
+        
+        
+        switch (a) {
+            case 100>=a>90:
+                print(a,grade = "A+")
+                break;
+            case 90>=a>80:
+                print(a,grade = "A")
+                break;
+            case 80>=a>70:
+                print(a,grade = "B+")
+                break;
+            case 70>=a>60:
+                print(a,grade = "B")
+                break;
+            case 60>=a>50:
+                print(a,grade = "C")
+                break;
+            case 50>=a>40:
+                print(a,grade = "D")
+                break;
+            case 40>a:
+                print(a,grade = "F")
+                break;
+             
+            default:
+                break;
+        }
+
+        
+    </script>    
+</body>
+</html>
