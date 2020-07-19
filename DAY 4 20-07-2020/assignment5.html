@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function printing(name,sales) {
+            var commission;
+            if (0<sales && sales<=5000) {
+                commission=0.02*sales;
+                console.log("Commission earned by "+name+" is "+commission)
+
+            }
+            if (5000<sales && sales<=10000) {
+                commission=0.05*sales;
+                console.log("Commission earned by "+name+" is "+commission)
+                
+            }
+            if (10000<sales && sales<=20000) {
+                commission=0.07*sales;
+                console.log("Commission earned by "+name+" is "+commission)
+                
+            }
+            if (20000<sales) {
+                commission=0.02*sales;
+                console.log("Commission earned by "+name+" is "+commission)
+                
+            }
+        }
+        var arr;
+        var n= prompt("enter the no of employees")
+        for (let index = 0; index < n; index++) {
+            var data=prompt("enter the name and the sales")
+            arr=data.split(" ");
+            printing(arr[0],arr[1]);
+            
+        }
+    </script>
+</body>
+</html>

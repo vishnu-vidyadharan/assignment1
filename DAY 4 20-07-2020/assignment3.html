@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let shoppingList=["water","juice","milk","bread","butter"];
+        let shoppingBasket=[...shoppingList];
+        var n=prompt("enter no of items to add");
+        for (let index = 0; index < n; index++) {
+            var x =prompt("enter the item")
+            shoppingBasket.push(x);
+            
+        }
+        for (let index = 0; index < shoppingBasket.length; index++) {
+            console.log(shoppingBasket[index]);
+            
+        }
+
+    </script>
+</body>
+</html>
